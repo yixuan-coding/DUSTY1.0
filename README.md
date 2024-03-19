@@ -1,0 +1,1 @@
+The DUSTY moodel has two parts. Run "cal_0_Ma_dust.ncl" first to tune the model to pre-industrial and derived the scaling constants, namely C_1, C_2, C_3, C_4, C_5 (see details in the paper). Then run "cal_paleo_dust.ncl" which adapts those scaling constants and apply to all the paleo expriments.
