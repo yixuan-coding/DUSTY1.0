@@ -1,5 +1,5 @@
 ;;;use the dust model version: Model_1
-;;;
+;;;do not include the specific exp names
 ;;;
 ;;;all variables set to "double"
 
@@ -8,20 +8,20 @@ begin
 
      ;print("start")  
 
-;;;--- swiches
+;;;--- switches
 write_dust=1 ;;write nc file at 1
 write_factor=1
 do_scaling=1 ;; scale to obs at 1
 
 
-expname="xpkka" ;;
+expname=" " ;;
 
-lsm_root_dir="/home/bridge/swsvalde/ummodel/data/"
-exp_dir="/home/bridge/hr20323/work/my_runs/"+expname+"/"
+lsm_root_dir=" "
+exp_dir=" "
 n_month=12
 monthname=new(n_month,string)
 monthname=(/"ja","fb","mr","ar","my","jn","jl","ag","sp","ot","nv","dc"/)
-lsname="teyea" ;; that is used for land sea mask & PFTs teyea-Scotese_04 / tdbad-standard_pi
+lsname=" " ;; 
 
 nlon=96
 nlat=73
@@ -152,8 +152,6 @@ print("y="+(y+1))
         wind_u=(/f_wind->u_10m/)
         wind_v=(/f_wind->v_10m/)
 
-
-;print("just before loop over h") 
 do h=0,719 ;;720 in total
     ;print("h="+(h+1))
     var_smoisture=flt2dble(smoisture(h,0,:,:))
