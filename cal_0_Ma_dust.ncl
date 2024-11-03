@@ -1,5 +1,6 @@
-;;;use the dust model version: Model_1
-;;;do not include the specific exp names
+;;；To calculate the 0 Ma dust emissions and scale the area-weighted global mean emission to observation
+;;; The factorisation is carried on simultaneously
+;;;do not include the specific exp names and directories
 ;;;
 ;;;all variables set to "double"
 
