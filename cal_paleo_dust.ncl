@@ -1,5 +1,5 @@
-;;;use the dust model version: Model_1
-;;;
+;;;To calculate paleo dust emissions with the coefficients derived from cal_0_Ma_dust.ncl
+;;;do not include specific exp names and directories
 ;;;
 ;;;all variables set to "double"
 
@@ -13,9 +13,9 @@ write_dust=1 ;;write nc file at 1
 write_factor=1
 do_scaling=1 ;; scale to obs at 1
 
-expname_list=asciiread("/export/silurian/array-01/hr20323/base_documents/Scotese_dust_names_unfinished.txt", 109, "string")
-lsm_root_dir="/home/bridge/swsvalde/ummodel/data/"
-lsmname_list=asciiread("/export/silurian/array-01/hr20323/base_documents/Scotese_04_names_unfinished.txt", 109, "string")
+expname_list=asciiread(" ", 109, "string")
+lsm_root_dir=" "
+lsmname_list=asciiread(" ", 109, "string")
 
 n_month=12
 monthname=new(n_month,string)
@@ -76,7 +76,7 @@ print("model_number = "+model_number)
 
 do n=86,107 ;;0 to 107 corresponding to 541 Ma to 5 Ma
     expname=expname_list(n) ;;
-    exp_dir="/home/bridge/hr20323/work/my_runs/"+expname+"/"
+    exp_dir=""
 
     lsname=lsmname_list(n) ;; that is used for land sea mask & PFTs teyea-Scotese_04 / tdbad-standard_pi
 
